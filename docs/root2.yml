@@ -14,7 +14,7 @@ sources:
     maxzoom: 19
     scheme: xyz
     tiles:
-      - https://k96mz.github.io/20241007makeClearMap/mbtiles/0-0-0.mbtiles
+      - https://k96mz.github.io/20241007makeClearMap/pbfFiles//{z}/{x}/{y}.pbf
 layers:
   - !!inc/file layers/landmass.yml
   - !!inc/file layers/ocean.yml
