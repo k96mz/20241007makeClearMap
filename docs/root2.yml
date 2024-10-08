@@ -1,0 +1,21 @@
+version: 8
+sprite: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/sprites/sprite
+glyphs: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf
+sources:
+  esri:
+    type: vector
+    attribution: UN_CLEARMAP_VT
+    bounds:
+      - -180
+      - -85.0511
+      - 180
+      - 85.0511
+    minzoom: 0
+    maxzoom: 19
+    scheme: xyz
+    tiles:
+      - https://k96mz.github.io/20241007makeClearMap/mbtiles/0-0-0.mbtiles
+layers:
+  - !!inc/file layers/landmass.yml
+  - !!inc/file layers/ocean.yml
+_ssl: true

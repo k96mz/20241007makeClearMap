@@ -1,0 +1,8 @@
+id: landmass
+type: fill
+source: esri
+source-layer: landmass
+maxzoom: 5
+layout: {}
+paint:
+  fill-color: '#FCFCFA'
