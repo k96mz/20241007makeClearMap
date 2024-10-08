@@ -1,0 +1,8 @@
+id: ocean
+type: fill
+source: esri
+source-layer: ocean
+maxzoom: 5
+layout: {}
+paint:
+  fill-color: '#D5EBF5'
