@@ -16,6 +16,18 @@ sources:
     tiles:
       - https://k96mz.github.io/20241007makeClearMap/pbfFiles//{z}/{x}/{y}.pbf
 layers:
-  - !!inc/file layers/landmass.yml
   - !!inc/file layers/ocean.yml
+  - !!inc/file layers/landmass.yml
+  - !!inc/file layers/wbya10.yml
+  - !!inc/file layers/bndl-0.yml
+  - !!inc/file layers/bndl-1.yml
+  - !!inc/file layers/bndl-2.yml
+  - !!inc/file layers/bndl-3.yml
+  - !!inc/file layers/un_water.yml
+  - !!inc/file layers/dral10.yml
+  - !!inc/file layers/lab_cty.yml
+  - !!inc/file layers/lab_water.yml
+  - !!inc/file layers/phyp_label.yml
+  - !!inc/file layers/lab_inwater.yml
+  - !!inc/file layers/un_popp.yml
 _ssl: true

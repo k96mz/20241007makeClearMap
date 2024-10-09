@@ -1,0 +1,8 @@
+id: un_water
+type: line
+source: esri
+source-layer: un_water
+minzoom: 3
+maxzoom: 5
+paint:
+  line-color: 'rgba(157,189,209,0.7)'

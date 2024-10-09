@@ -1,0 +1,9 @@
+id: dral10
+type: line
+source: esri
+source-layer: dral10
+minzoom: 3
+maxzoom: 5
+paint:
+  line-color: rgba(157,189,209,0.7)
+  line-width: 0.4

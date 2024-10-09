@@ -1,0 +1,20 @@
+id: lab_inwater
+type: symbol
+source: esri
+source-layer: lab_inwater
+minzoom: 0
+maxzoom: 5
+layout:
+  text-font:
+    - Open Sans Semibold Italic
+  text-size: 10
+  text-max-width: 15
+  text-anchor: center
+  text-letter-spacing: 0.3
+  text-field: '{textstring}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#5F93B8'
+  text-halo-color: rgba(225,235,240,0.5)
+  text-halo-width: 0.466667

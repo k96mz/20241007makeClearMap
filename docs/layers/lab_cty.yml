@@ -1,0 +1,19 @@
+id: lab_cty
+type: symbol
+source: esri
+source-layer: lab_cty
+minzoom: 0
+maxzoom: 5
+layout:
+  text-font:
+    - Open Sans Semibold Regular
+  text-size: 10
+  text-anchor: center
+  text-letter-spacing: 0.15
+  text-field: '{textstring}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#6E7780'
+  text-halo-color: rgba(250,251,252,0.25)
+  text-halo-width: 0.733333

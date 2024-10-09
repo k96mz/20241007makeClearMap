@@ -1,0 +1,9 @@
+id: wbya10
+type: fill
+source: esri
+source-layer: wbya10
+minzoom: 0
+maxzoom: 5
+layout: {}
+paint:
+  fill-color: '#DFEFF7'

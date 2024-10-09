@@ -1,0 +1,30 @@
+id: un_popp
+type: symbol
+source: esri
+source-layer: un_popp
+minzoom: 0
+maxzoom: 5
+layout:
+  text-font:
+    - Arial Unicode MS Regular
+  text-size: 9
+  # text-anchor: center
+  text-anchor: top-left
+  text-offset: [1, 0]
+  text-letter-spacing: 0.1
+  text-max-width: 50
+  text-field: '{romnam}'
+  text-allow-overlap: true
+  text-optional: true
+  icon-image: POPULATED PLACES/Populated Places_SYMBOLS/National Capital
+  icon-size:
+    stops:
+      - - 3.89
+        - 1
+      - - 5.89
+        - 1.06667
+  icon-allow-overlap: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(247,249,250,0.85)
+  text-halo-width: 1

@@ -1,0 +1,16 @@
+id: bndl-1
+type: line
+source: esri
+source-layer: bndl
+filter:
+  - '=='
+  - bdytyp
+  - 1
+minzoom: 0
+maxzoom: 5
+layout:
+  line-join: round
+paint:
+  line-color: '#737C80'
+  line-width: 0.7
+  line-opacity: 0.9

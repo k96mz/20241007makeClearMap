@@ -1,0 +1,318 @@
+{
+  "version": 8,
+  "sprite": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/sprites/sprite",
+  "glyphs": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "esri": {
+      "type": "vector",
+      "attribution": "UN_CLEARMAP_VT",
+      "bounds": [
+        -180,
+        -85.0511,
+        180,
+        85.0511
+      ],
+      "minzoom": 0,
+      "maxzoom": 19,
+      "scheme": "xyz",
+      "tiles": [
+        "https://k96mz.github.io/20241007makeClearMap/pbfFiles//{z}/{x}/{y}.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "ocean",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "ocean",
+      "maxzoom": 5,
+      "layout": {},
+      "paint": {
+        "fill-color": "#D5EBF5"
+      }
+    },
+    {
+      "id": "landmass",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "landmass",
+      "maxzoom": 5,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FCFCFA"
+      }
+    },
+    {
+      "id": "wbya10",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "wbya10",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {},
+      "paint": {
+        "fill-color": "#DFEFF7"
+      }
+    },
+    {
+      "id": "bndl-0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "bndl",
+      "filter": [
+        "==",
+        "bdytyp",
+        0
+      ],
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#737B80",
+        "line-width": 0.2,
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "bndl-1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "bndl",
+      "filter": [
+        "==",
+        "bdytyp",
+        1
+      ],
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#737C80",
+        "line-width": 0.7,
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "bndl-2",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "bndl",
+      "filter": [
+        "==",
+        "bdytyp",
+        2
+      ],
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#737C80",
+        "line-dasharray": [
+          8,
+          5
+        ],
+        "line-width": 1,
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "bndl-3",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "bndl",
+      "filter": [
+        "==",
+        "bdytyp",
+        3
+      ],
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#737C80",
+        "line-dasharray": [
+          8,
+          5
+        ],
+        "line-width": 1,
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "un_water",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "un_water",
+      "minzoom": 3,
+      "maxzoom": 5,
+      "paint": {
+        "line-color": "rgba(157,189,209,0.7)"
+      }
+    },
+    {
+      "id": "dral10",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "dral10",
+      "minzoom": 3,
+      "maxzoom": 5,
+      "paint": {
+        "line-color": "rgba(157,189,209,0.7)",
+        "line-width": 0.4
+      }
+    },
+    {
+      "id": "lab_cty",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "lab_cty",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": [
+          "Open Sans Semibold Regular"
+        ],
+        "text-size": 10,
+        "text-anchor": "center",
+        "text-letter-spacing": 0.15,
+        "text-field": "{textstring}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#6E7780",
+        "text-halo-color": "rgba(250,251,252,0.25)",
+        "text-halo-width": 0.733333
+      }
+    },
+    {
+      "id": "lab_water",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "lab_water",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-size": 12,
+        "text-max-width": 15,
+        "text-anchor": "center",
+        "text-letter-spacing": 0.3,
+        "text-field": "{textstring}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#5F93B8",
+        "text-halo-color": "rgba(225,235,240,0.5)",
+        "text-halo-width": 0.466667
+      }
+    },
+    {
+      "id": "phyp_label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "phyp_label",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-size": 10,
+        "text-max-width": 15,
+        "text-anchor": "center",
+        "text-letter-spacing": 0.3,
+        "text-field": "{name}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#5F93B8",
+        "text-halo-color": "rgba(225,235,240,0.5)",
+        "text-halo-width": 0.466667
+      }
+    },
+    {
+      "id": "lab_inwater",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "lab_inwater",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-size": 10,
+        "text-max-width": 15,
+        "text-anchor": "center",
+        "text-letter-spacing": 0.3,
+        "text-field": "{textstring}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#5F93B8",
+        "text-halo-color": "rgba(225,235,240,0.5)",
+        "text-halo-width": 0.466667
+      }
+    },
+    {
+      "id": "un_popp",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "un_popp",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": [
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": 9,
+        "text-anchor": "top-left",
+        "text-offset": [
+          1,
+          0
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 50,
+        "text-field": "{romnam}",
+        "text-allow-overlap": true,
+        "text-optional": true,
+        "icon-image": "POPULATED PLACES/Populated Places_SYMBOLS/National Capital",
+        "icon-size": {
+          "stops": [
+            [
+              3.89,
+              1
+            ],
+            [
+              5.89,
+              1.06667
+            ]
+          ]
+        },
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "#3E3F40",
+        "text-halo-color": "rgba(247,249,250,0.85)",
+        "text-halo-width": 1
+      }
+    }
+  ],
+  "_ssl": true
+}
