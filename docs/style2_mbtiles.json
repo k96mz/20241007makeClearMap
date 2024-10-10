@@ -6,18 +6,11 @@
     "esri": {
       "type": "vector",
       "attribution": "UN_CLEARMAP_VT",
-      "bounds": [
-        -180,
-        -85.0511,
-        180,
-        85.0511
-      ],
+      "bounds": [-180, -85.0511, 180, 85.0511],
       "minzoom": 0,
       "maxzoom": 19,
       "scheme": "xyz",
-      "tiles": [
-        "https://k96mz.github.io/20241007makeClearMap/pbfFiles/{z}/{x}/{y}.pbf"
-      ]
+      "tiles": ["http://localhost:3000/VT/zxy/0-0-0/{z}/{x}/{y}.pbf"]
     }
   },
   "layers": [
@@ -60,11 +53,7 @@
       "type": "line",
       "source": "esri",
       "source-layer": "bndl",
-      "filter": [
-        "==",
-        "bdytyp",
-        0
-      ],
+      "filter": ["==", "bdytyp", 0],
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
@@ -82,11 +71,7 @@
       "type": "line",
       "source": "esri",
       "source-layer": "bndl",
-      "filter": [
-        "==",
-        "bdytyp",
-        1
-      ],
+      "filter": ["==", "bdytyp", 1],
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
@@ -103,11 +88,7 @@
       "type": "line",
       "source": "esri",
       "source-layer": "bndl",
-      "filter": [
-        "==",
-        "bdytyp",
-        2
-      ],
+      "filter": ["==", "bdytyp", 2],
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
@@ -115,10 +96,7 @@
       },
       "paint": {
         "line-color": "#737C80",
-        "line-dasharray": [
-          8,
-          5
-        ],
+        "line-dasharray": [8, 5],
         "line-width": 1,
         "line-opacity": 0.9
       }
@@ -128,11 +106,7 @@
       "type": "line",
       "source": "esri",
       "source-layer": "bndl",
-      "filter": [
-        "==",
-        "bdytyp",
-        3
-      ],
+      "filter": ["==", "bdytyp", 3],
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
@@ -140,10 +114,7 @@
       },
       "paint": {
         "line-color": "#737C80",
-        "line-dasharray": [
-          8,
-          5
-        ],
+        "line-dasharray": [8, 5],
         "line-width": 1,
         "line-opacity": 0.9
       }
@@ -179,9 +150,7 @@
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
-        "text-font": [
-          "Open Sans Semibold Regular"
-        ],
+        "text-font": ["Open Sans Semibold Regular"],
         "text-size": 10,
         "text-anchor": "center",
         "text-letter-spacing": 0.15,
@@ -203,9 +172,7 @@
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
+        "text-font": ["Open Sans Semibold Italic"],
         "text-size": 12,
         "text-max-width": 15,
         "text-anchor": "center",
@@ -228,9 +195,7 @@
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
+        "text-font": ["Open Sans Semibold Italic"],
         "text-size": 10,
         "text-max-width": 15,
         "text-anchor": "center",
@@ -253,9 +218,7 @@
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
+        "text-font": ["Open Sans Semibold Italic"],
         "text-size": 10,
         "text-max-width": 15,
         "text-anchor": "center",
@@ -278,15 +241,10 @@
       "minzoom": 0,
       "maxzoom": 5,
       "layout": {
-        "text-font": [
-          "Arial Unicode MS Regular"
-        ],
+        "text-font": ["Arial Unicode MS Regular"],
         "text-size": 9,
         "text-anchor": "top-left",
-        "text-offset": [
-          1,
-          0
-        ],
+        "text-offset": [1, 0],
         "text-letter-spacing": 0.1,
         "text-max-width": 50,
         "text-field": "{romnam}",
@@ -295,14 +253,8 @@
         "icon-image": "POPULATED PLACES/Populated Places_SYMBOLS/National Capital",
         "icon-size": {
           "stops": [
-            [
-              3.89,
-              1
-            ],
-            [
-              5.89,
-              1.06667
-            ]
+            [3.89, 1],
+            [5.89, 1.06667]
           ]
         },
         "icon-allow-overlap": true
